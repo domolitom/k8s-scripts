@@ -16,8 +16,8 @@ for yaml_file in "$@"; do
 
     # Use grep to find lines containing "chart:" and then filter those lines with awk
     lines_without_oci=$(grep -n "chart:" "$yaml_file" | grep -viE 'oci://|OCI_REPO')
-    echo "Lines without oci in $yaml_file:"
     if [ -n "$lines_without_oci" ]; then
+    echo "Lines without oci in $yaml_file:"
         echo "$lines_without_oci"
     fi
 done
