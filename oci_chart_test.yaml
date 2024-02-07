@@ -1,0 +1,6 @@
+- chart: "little_elephant/Aarhus"
+- chart: "oci://pod"
+- chart: "OCI_REP"
+- chart: "OCI_REPO"
+- chart: "rabbitMQ"
+- eagle: "fish"
